@@ -1,19 +1,56 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
+import LoginPage from './LoginPage';
+import RegisterPage from './RegisterPage';
+import ForgotPassword from './ForgotPassword';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ProductsDescription from './ProductsDescription';
+import Footer from './Footer';
+import VerificationEmail from './VerificationEmail';
+import UserPage from './UserPage';
+import MyRegistration from './MyRegistration'; // Importe a página MyRegistration aqui
+import MyAds from './MyAds'; // Importe a página MyAds aqui
+import UserAds from './UserAds';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const AppRouter = () => {
+  const [userEmail, setUserEmail] = React.useState("");
+
+  return (
+    <React.StrictMode>
+      <Router>
+        <div className="flex flex-col min-h-screen">
+          <Routes>
+            <Route path="/" element={<App />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
+            <Route path="/forgotpassword" element={<ForgotPassword />} />
+            <Route path="/ProductsDescription/:id" element={<ProductsDescription />} />
+            <Route path="/verificationEmail" element={<VerificationEmail userEmail={userEmail} />} />
+            <Route path="/UserPage" element={<UserPage />} />
+            <Route path="/MyRegistration" element={<MyRegistration />} /> {/* Adicione a rota para MyRegistration aqui */}
+            <Route path="/MyAds" element={<MyAds />} /> {/* Adicione a rota para MyAds aqui */}
+            <Route path="/UserAds" element={<UserAds />} />
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </React.StrictMode>
+  );
+};
+
+ReactDOM.render(
+  <AppRouter />,
+  document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+
+
+
+
+
+
