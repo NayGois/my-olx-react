@@ -26,7 +26,7 @@ const ForgotPassword = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center mt-0.3">
       <div className="max-w-md w-full px-4 py-8 bg-white shadow-lg rounded-lg border border-gray-300">
-        <img src= "/logo_olx.png" alt="Logo OLX" className="mx-auto h-20 mb-4" /> {/* Adicione a logo aqui */}
+        <img src= "/assets/logo_olx.png" alt="Logo OLX" className="mx-auto h-20 mb-4" /> {/* Adicione a logo aqui */}
         <h2 className="text-2xl font-semibold mb-4 text-center">Esqueceu sua senha?</h2>
         <p className="text-gray-600 text-center mb-4">
           Não se preocupe! Insira o seu e-mail de cadastro e enviaremos instruções para você.

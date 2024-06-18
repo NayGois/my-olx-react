@@ -45,7 +45,7 @@ const LoginPage = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center mt-0.3">
       <div className="max-w-md w-full px-4 py-8 bg-white shadow-lg rounded-lg border border-gray-300">
-        <img src="/logo_olx.png" alt="Logo OLX" className="mx-auto h-20 mb-4" />
+        <img src="/assets/logo_olx.png" alt="Logo OLX" className="mx-auto h-20 mb-4" />
         <h2 className="text-2xl font-semibold mb-4 text-center">Acesse sua Conta</h2>
         {errorMessage && <div className="text-red-500 text-center mb-4">{errorMessage}</div>}
         <form className="max-w-xs mx-auto space-y-4" onSubmit={(e) => e.preventDefault()}>

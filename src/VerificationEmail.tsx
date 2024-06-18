@@ -14,7 +14,7 @@ const Header = () => {
       <div className="container mx-auto px-8 md:px-16 flex flex-col sm:flex-row justify-between items-center h-full">
         {/* Logo */}
         <div className="flex items-center mb-2 sm:mb-0">
-          <img src="/logo_olx.png" alt="Logo OLX" className="h-16" />
+          <img src="/assets/logo_olx.png" alt="Logo OLX" className="h-16" />
           {/* Caixa de Pesquisa */}
           <div className="max-w-md flex flex-grow relative mr-0.5">
             <input type="text" placeholder="Pesquisar..." className="px-6 py-3 w-full sm:w-96 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent bg-white border border-gray-300 text-gray-400 transition-all duration-300" />

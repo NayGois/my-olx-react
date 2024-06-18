@@ -167,7 +167,7 @@ const MyAds = () => {
                 <button onClick={() => navigate(-1)} className="text-gray-600 hover:text-gray-800 focus:outline-none">
                     <i className="pi pi-arrow-left text-2xl"></i>
                 </button>
-                <img src="/logo_olx.png" alt="Logo" className="h-12" />
+                <img src="/assets/logo_olx.png" alt="Logo" className="h-12" />
             </header>
             <div className="pt-20 ml-8 lg:ml-12 xl:ml-16">
                 <div className="text-xl font-semibold mb-6">Olá, o que você quer anunciar?</div>
